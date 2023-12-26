@@ -1,5 +1,6 @@
 # Description
 > Cette application web permet de convertir un fichier de données traduites brutes au format JSON afin de pouvoir implémenter facilement des versions d'un site traduites dans d'autres langues.
+> Elle est actuellement uniquement optimisée pour les écrans larges (tablettes et ordinateurs).
 # Installation
 Il suffit de cloner ce répertoire vers le dossier public d'un serveur local (par exemple `C:/xampp/htdocs` pour [**```Xampp```**](https://www.apachefriends.org/download.html)), le démarrer, puis se rendre à l'adresse correspondante (http://localhost/langjson).
 # Mode d'emploi
