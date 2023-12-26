@@ -1,0 +1,47 @@
+{
+    "1": {
+        "fr":"Déposer le fichier",
+        "en":"Drop file",
+        "hu":"Fájl feltöltése"
+    },
+    "2": {
+        "fr":"Sélectionner un fichier",
+        "en":"Select a file",
+        "hu":"Válasszon fájlt: "
+    },
+    "3": {
+        "fr":"Choisir le nombre d'espaces à indenter : ",
+        "en":"Choose indentation: ",
+        "hu":"Behúzás: "
+    },
+    "4": {
+        "fr":"Choisir le séparateur à utiliser : ",
+        "en":"Choose separator: ",
+        "hu":"Elválasztó karakter:"
+    },
+    "5": {
+        "fr":"Envoyer",
+        "en":"Send",
+        "hu":"Küldés"
+    },
+    "6": {
+        "fr":"Votre fichier JSON s'affichera ici.",
+        "en":"Your JSON file will show here.",
+        "hu":"A JSON-fájlja itt fog megjelenni."
+    },
+    "7": {
+        "fr":"Aperçu du fichier",
+        "en":"Preview",
+        "hu":"Előnézet"
+    },
+    "8": {
+        "fr":"Valider",
+        "en":"OK",
+        "hu":"Mentés"
+    },
+    "9": {
+        "fr":"Cette application n'est pas optimisée pour les écrans de cette taille. Veuillez utiliser le mode paysage de votre appareil ou bien utiliser un écran plus large.",
+        "en":"This app is not optimized for your screen. Please use landscape mode, or a larger screen.",
+        "hu":"Ez az alkalmazás optimalizálatlan ilyen méretű képernyőre. Kérjük az eszköze oldaltájólását fekvőre állítsa át, vagy nagyobb képernyőt használjon."
+    }
+}

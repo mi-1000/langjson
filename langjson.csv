@@ -1,0 +1,10 @@
+id;fr;en;hu
+1;Déposer le fichier;Drop file;Fájl feltöltése
+2;Sélectionner un fichier;Select a file;Válasszon fájlt: 
+3;Choisir le nombre d'espaces à indenter : ;Choose indentation: ;Behúzás: 
+4;Choisir le séparateur à utiliser : ;Choose separator: ;Elválasztó karakter:
+5;Envoyer;Send;Küldés
+6;Votre fichier JSON s'affichera ici.;Your JSON file will show here.;A JSON-fájlja itt fog megjelenni.
+7;Aperçu du fichier;Preview;Előnézet
+8;Valider;OK;Mentés
+9;Cette application n'est pas optimisée pour les écrans de cette taille. Veuillez utiliser le mode paysage de votre appareil ou bien utiliser un écran plus large.;This app is not optimized for your screen. Please use landscape mode, or a larger screen.;Ez az alkalmazás optimalizálatlan ilyen méretű képernyőre. Kérjük az eszköze oldaltájólását fekvőre állítsa át, vagy nagyobb képernyőt használjon.

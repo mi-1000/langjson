@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("./polices/gotham.otf");
+}
+
+.selection_fichier {
+  font-family: "Gotham" !important;
+  border-radius: 5px;
+  border: dotted #44f 2px;
+  padding: 5px;
+  background: linear-gradient(300deg, #bbf 0%, #88f 100%);
+}
+
+#formulaire-envoi-fichier {
+  filter: none;
+  transition: filter 0.25s ease-in;
+}
+
+#formulaire-envoi-fichier.deposer {
+  filter: blur(10px);
+}
+
+.texte-deposer {
+  display: none;
+  transition: display 0.25s ease-in;
+}
+
+.texte-deposer:has(+ #formulaire-envoi-fichier.deposer) {
+  display: flex;
+}
+
+input {
+  font-family: "Gotham";
+}
+
+input[type="number"] {
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  width: 2.5em;
+}
+
+input[type="text"] {
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  width: 4em;
+}
+
+.bouton {
+  font-family: "Gotham";
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  transition: all ease-in-out 0.25s;
+}
+
+.bouton:hover:not(:disabled), .bouton:focus:not(:disabled) {
+  background: linear-gradient(90deg, #22f 0%, #44f 100%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.bouton:disabled {
+  font-family: "Gotham";
+  color: #888;
+  background-color: #ddd;
+  border-radius: 10px;
+  border: none;
+}
+
+.bouton:disabled:hover {
+  cursor: initial;
+  background-color: #ddd !important;
+  color: #888 !important;
+}
+
+.json-nombre,
+.json-cle,
+.json-string,
+.json-booleen,
+.json-null {
+  transition: background 0.2s ease-out;
+}
+
+.json-nombre:hover,
+.json-cle:hover,
+.json-string:hover,
+.json-booleen:hover,
+.json-null:hover {
+  background: #ffff1b28;
+  cursor: pointer;
+}
+
+.json-nombre {
+  color: #5bf;
+}
+
+.json-cle {
+  color: #44f;
+}
+
+.json-string {
+  color: #0b0;
+}
+
+.json-booleen {
+  color: #f80;
+}
+
+.json-null {
+  color: #f44;
+}
+
+#contenu-json {
+  display: flex !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  width: 50vw;
+  height: 50vh;
+  resize: both;
+  overflow: auto;
+  border-radius: 10px;
+  padding-top: 35px !important;
+}
+
+#contenu-json.theme-clair {
+  background-color: #ececec;
+  color: #000;
+}
+
+#contenu-json.theme-clair:hover {
+  background-color: #e9e9e9;
+}
+
+#contenu-json.theme-sombre {
+  background-color: #161616;
+  color: #fff;
+}
+
+#contenu-json.theme-sombre:hover {
+  background-color: #131313;
+}
+
+.copier-texte,
+.sauvegarder-texte,
+.changer-theme {
+  border-radius: 5px;
+  background: transparent;
+  margin: 5px;
+  padding: 3px !important;
+  opacity: 0;
+  transition: color 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+.copier-texte .bi-clipboard,
+.sauvegarder-texte .bi-floppy,
+.changer-theme .bi-sun,
+.changer-theme .bi-moon {
+  color: #444;
+  transition: color 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+.copier-texte .bi-clipboard-check-fill {
+  display: none;
+  color: #bfb;
+  transition: color 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+.copier-texte:hover,
+.sauvegarder-texte:hover,
+.changer-theme:hover {
+  /* background: #111; */
+  cursor: pointer;
+}
+
+.copier-texte:hover:has(~ #contenu-json.theme-sombre),
+.sauvegarder-texte:hover:has(~ #contenu-json.theme-sombre),
+.changer-theme:hover:has(~ #contenu-json.theme-sombre) {
+  background: #111;
+}
+
+.copier-texte:hover:has(~ #contenu-json.theme-clair),
+.sauvegarder-texte:hover:has(~ #contenu-json.theme-clair),
+.changer-theme:hover:has(~ #contenu-json.theme-clair) {
+  background: #d8d8d8;
+}
+
+.copier-texte:has(~ #contenu-json.theme-sombre) .bi-clipboard:hover,
+.sauvegarder-texte:has(~ #contenu-json.theme-sombre) .bi-floppy:hover,
+.changer-theme:has(~ #contenu-json.theme-sombre) .bi-sun:hover,
+.changer-theme:has(~ #contenu-json.theme-sombre) .bi-moon:hover {
+  color: #fff;
+}
+
+.copier-texte:has(~ #contenu-json.theme-clair) .bi-clipboard:hover,
+.sauvegarder-texte:has(~ #contenu-json.theme-clair) .bi-floppy:hover,
+.changer-theme:has(~ #contenu-json.theme-clair) .bi-sun:hover,
+.changer-theme:has(~ #contenu-json.theme-clair) .bi-moon:hover {
+  color: #000;
+}
+
+.copier-texte .bi-clipboard-check-fill:hover {
+  color: #0f0;
+}
+
+.copier-texte {
+  margin-left: 5px;
+}
+
+.sauvegarder-texte {
+  margin-left: 30px;
+}
+
+.changer-theme {
+  margin-left: 55px;
+}
+
+.modal {
+  font-family: "Gotham" !important;
+}
+
+.modal-content {
+  border: none !important;
+  border-radius: 25px !important;
+  color: #000 !important;
+  background: linear-gradient(90deg, #bbf 0%, #99f 100%) !important;
+}
+
+table {
+  text-align: center;
+}
+
+table td,
+table th {
+  outline: 1px #000 solid;
+  padding: 2px;
+}
+
+table thead th {
+  text-shadow: 0 0 1px #000;
+  border-bottom: 2px #000 solid;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+table thead tr {
+  background: linear-gradient(90deg, #44f 0%, #22f 100%);
+  color: #fff;
+}
+
+table tbody tr {
+  background: none;
+  color: #000;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+table tbody tr td:hover {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+table tbody tr td:first-child {
+  font-weight: bold;
+}
+
+table tbody tr:nth-child(2n) {
+  background: linear-gradient(90deg, #ddd 0%, #bbb 100%);
+}
+
+table tbody tr:nth-child(2n + 1) {
+  background: linear-gradient(90deg, #fff 0%, #ddd 100%);
+}
+
+table th:first-of-type {
+  border-top-left-radius: 10px;
+}
+table th:last-of-type {
+  border-top-right-radius: 10px;
+}
+table tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+table tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
+
+.changement-langue {
+  font-family: "Gotham";
+}
+
+.changement-langue .dropdown-menu.show {
+  background: linear-gradient(90deg, #99f 0%, #bbf 100%) !important;
+  border: none !important;
+}
+
+button[data-drapeau] > span[class*="fi-"] {
+  margin-right: 5px;
+  transition: margin-right 0.25s ease-in;
+}
+
+button[data-drapeau] > span {
+  transform: scale(100%);
+  transition: transform 0.25s ease-in, font-size 0.25s ease-in;
+}
+
+button[data-drapeau]:hover > span {
+  font-size: 115%;
+  transform: scale(115%);
+}
+
+button[data-drapeau]:hover > span[class*="fi-"] {
+  margin-right: 10px;
+}
+
+button[data-drapeau] {
+  background: transparent;
+  color: #000;
+  transition: background 0.25s ease-in, color 0.25s ease-in;
+  border-radius: 10px;
+}
+
+button[data-drapeau]:hover {
+  cursor: pointer;
+  background: linear-gradient(90deg, #44f 0%, #22f 100%);
+  color: #fff;
+}
