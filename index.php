@@ -110,8 +110,4 @@
     </div>
 </body>
 
-<!-- TODO : Générer le tableau associé au fichier, fenêtre de confirmation avec aperçu dans la même fenêtre -->
-<!-- Changer l'attribut lang de html -->
-<!-- Récupérer le nom de la clé : el.previousElementSibling.innerText.match(/\b.*\b/)[0] -->
-
 </html>

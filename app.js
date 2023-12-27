@@ -133,7 +133,6 @@ function gererFormulaireSelectionFichier() {
 async function reinitialiserFormulaireChoixFichier() {
     const inputFichier = document.getElementById('fichier');
     let separateur = await detecterDelimiteur(inputFichier.files[0]);
-    console.log(separateur);
     if (separateur !== null) {
         document.getElementById('separateur').value = separateur;
     }
