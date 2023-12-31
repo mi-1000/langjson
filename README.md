@@ -20,13 +20,13 @@ La liste des codes **ISO 639-1** pour les langues est disponible [ici](https://f
 
 * , (Virgule)
 * ; (Point-virgule)
-*   (Espace)
+*   (Espace)
 * \t (Tabulation)
 
-Le séparateur est généralement automatiquement détecté lors du tévéversement du fichier. Dans le cas contraire, il est possible de choisir manuellement le séparateur, mais l'application risque de dysfonctionner.
+Le séparateur est généralement automatiquement détecté lors du téléversement du fichier. Dans le cas contraire, il est possible de choisir manuellement le séparateur, mais l'application risque de dysfonctionner.
 
 Il suffit ensuite de téléverser le fichier sur le site ou de le faire glisser directement afin de pouvoir en voir un aperçu et le convertir.
-Le fichier JSON ainsi obtenu peut-être utiliser pour charger les données dans différentes langues. Ce site lui-même a été traduit à l'aide de son propre outil.
+Le fichier JSON ainsi obtenu peut-être utilisé pour charger les données dans différentes langues. Ce site lui-même a été traduit à l'aide de son propre outil.
 
 Le fichier source CSV utilisé pour la traduction du site et le fichier JSON converti sont disponibles à la racine du projet à titre d'exemple.
 
